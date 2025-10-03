@@ -16,7 +16,7 @@ import {
   platformTabs,
   socialProofStats,
   testimonials,
-} from "@/lib/data";
+} from "@/convex/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -295,7 +295,7 @@ const Home = () => {
       <SocialProof />
 
       {/* Testimonials */}
-      <Testimonials/>
+      <Testimonials />
 
       {/* CTA Section */}
       <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-purple-900/20">

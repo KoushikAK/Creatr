@@ -257,9 +257,9 @@ export default function PostEditorContent({
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 backdrop-blur-sm flex items-center justify-center space-x-4">
                 <Button
                   onClick={() => onImageUpload?.("featured")}
-                  variant="secondary"
+                  variant="premiumGlass"
                   size="lg"
-                  className="shadow-xl backdrop-blur-md bg-white/90 hover:bg-white transition-all duration-200 transform hover:scale-105"
+                  className="shadow-xl backdrop-blur-md transition-all duration-200 transform hover:scale-105"
                 >
                   Change Image
                 </Button>

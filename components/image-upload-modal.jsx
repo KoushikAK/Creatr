@@ -38,7 +38,10 @@ import {
   X,
 } from "lucide-react";
 import { toast } from "sonner";
-import { buildTransformationUrl, uploadToImageKit } from "@/lib/imageKit";
+import {
+  buildTransformationUrl,
+  uploadToImageKit,
+} from "@/convex/lib/imageKit";
 
 // Form validation schema
 const transformationSchema = z.object({
@@ -192,12 +195,12 @@ export default function ImageUploadModal({
 
       // Background removal
       if (watchedValues.backgroundRemoved) {
-        transformationChain.push({ effect: "removedotbg" });
+        transformationChain.push({ effect: "remove-bg" });
       }
 
       // Drop shadow (only works with transparent background)
       if (watchedValues.dropShadow && watchedValues.backgroundRemoved) {
-        transformationChain.push({ effect: "dropshadow" });
+        transformationChain.push({ effect: "shadow" });
       }
 
       // Text overlay

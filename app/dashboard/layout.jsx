@@ -15,7 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { UserButton } from "@clerk/nextjs";
-import { cn } from "@/lib/utils";
+import { cn } from "@/convex/lib/utils";
 import { api } from "@/convex/_generated/api";
 import { useConvexQuery } from "@/hooks/use-convex-query";
 import Image from "next/image";
@@ -198,4 +198,3 @@ export default function DashboardLayout({ children }) {
     </div>
   );
 }
-
