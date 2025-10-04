@@ -10,19 +10,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import {
-  features,
-  platformTabs,
-  socialProofStats,
-  testimonials,
-} from "@/convex/lib/data";
+
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer";
 import SocialProof from "@/components/Social";
 import Testimonials from "@/components/Testimonials";
+import { features, platformTabs } from "@/lib/data";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },

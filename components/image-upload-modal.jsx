@@ -38,10 +38,8 @@ import {
   X,
 } from "lucide-react";
 import { toast } from "sonner";
-import {
-  buildTransformationUrl,
-  uploadToImageKit,
-} from "@/convex/lib/imageKit";
+import { buildTransformationUrl, uploadToImageKit } from "@/lib/imageKit";
+
 
 // Form validation schema
 const transformationSchema = z.object({

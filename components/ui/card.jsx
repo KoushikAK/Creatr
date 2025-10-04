@@ -1,6 +1,7 @@
+import { cn } from "@/lib/utils";
 import * as React from "react";
 
-import { cn } from "@/convex/lib/utils";
+
 
 function Card({ className, ...props }) {
   return (
